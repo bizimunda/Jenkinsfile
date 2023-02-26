@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Checking Groovy Version') {
             steps {
                 withGroovy{
                     sh 'groovy --version'
