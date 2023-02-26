@@ -13,16 +13,13 @@ pipeline {
         }
         stage('Build') {
             steps {
-                withGroovy{
-                    echo 'Building application'
-                }
-
+                echo 'Building application'
             }
 
         }
         stage('Test') {
             steps {
-                echo 'Building application'
+                echo 'Testing application'
             }
 
         }
