@@ -11,6 +11,21 @@ pipeline {
             }
 
         }
+        stage('Build') {
+            steps {
+                withGroovy{
+                    echo 'Building application'
+                }
+
+            }
+
+        }
+        stage('Test') {
+            steps {
+                echo 'Building application'
+            }
+
+        }
     }
 }
 
